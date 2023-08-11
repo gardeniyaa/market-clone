@@ -1,0 +1,41 @@
+footer {
+  /* 아래에 고정하게 만들어야함 */
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  /* 꽉 차게 만들어주는 것  viewwidth*/
+  padding-bottom: 30px;
+  padding-top: 20px;
+  border-top: 1px solid ghostwhite;
+  background-color: white;
+}
+
+.footer-block {
+  /* 블록들을 가로로 정렬한다. */
+  display: flex;
+  /* 블록을 일정한 간격으로 띄운다. */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-icons {
+  font-size: 10px;
+  display: flex;
+  /* 좌우로 정렬된 것을 위 아래로 정렬하고 싶으면 flex-direction: column; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  /* 커서 포인터를 바꿀 수 있음. */
+  cursor: pointer;
+}
+
+.footer-icons__img {
+  width: 30px;
+}
+
+.footer-icons__desc {
+  font-weight: bold;
+  transform: scale(1);
+  margin-top: 5px;
+}
